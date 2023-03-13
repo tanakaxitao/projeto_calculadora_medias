@@ -58,7 +58,8 @@ function atualizaMediaFinal() {
   const media = somaDasNotas / notas.length;
   const mediaFinal = calculaMediaFinal();
 
-  document.getElementById("media-final-valor").innerHTML = mediaFinal;
+  document.getElementById("media-final-valor").innerHTML =
+    mediaFinal.toFixed(3);
   document.getElementById("media-final-resultado").innerHTML =
     mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
